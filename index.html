@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyFood</title>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Simple Grid-->
+	<link rel="stylesheet" type="text/css" href="./css/simplegrid.css"> 
+	<!-- Font ABeeZee -->
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+	<!--My Css-->
+	<link rel="stylesheet" type="text/css" href="./css/style.css"> 
+	<!--JQuery  -->
+	<script src="js/jquery.min.js"></script>
+	<!-- My JS -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Maps API Javascript -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeN5L4VnGt8-tAbON7482pCt6K8i2eGdw&amp;sensor=false"></script>
+</head>
+<body>
+	<header>
+		<div id="headerDiv">	
+			<h1><a href="#">MyFood</a></h1>
+			<nav>
+				<ul>
+					<li><a href="#about">Sobre</a></li>
+					<li><a href="#cardapio">Cardápio</a></li>
+					<li><a href="#contact">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="about">
+		<div class="content">
+			<h1>Sobre</h1>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur id diam sit amet suscipit. Nullam pharetra erat sit amet consectetur interdum. Duis bibendum ornare mi in convallis. Morbi maximus, augue eu commodo ultricies, enim tellus malesuada quam, vitae pellentesque turpis neque et odio. Quisque accumsan ligula eu magna eleifend interdum non id lacus. Nulla congue viverra euismod. Praesent accumsan eros tortor, eget porta quam malesuada quis. Nam ac sagittis ipsum. Nunc consectetur dui vel orci luctus aliquam. Cras a ipsum facilisis mauris euismod gravida at vel lorem. Vivamus vitae ultrices lectus, sed pulvinar est. Fusce nisi metus, cursus dictum nunc ut, vehicula dignissim leo. Donec maximus tortor turpis, tempor vehicula nisl lacinia non. Praesent iaculis vel nunc quis consequat.</p>
+
+			<p>Sed a eros nec urna cursus posuere a auctor leo. Nunc quis mauris ac ex viverra laoreet vitae porta urna. Mauris bibendum dignissim orci nec varius. Nulla pharetra massa in quam ullamcorper consectetur. Nunc congue dolor a diam egestas, ac varius dolor pretium. Mauris nec euismod turpis. Sed fringilla, elit vel dapibus faucibus, nibh velit bibendum quam, a posuere enim velit a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut dapibus nibh. Nam vel leo non sem porttitor venenatis. Phasellus quis tincidunt arcu. Nam sed luctus nunc. Ut iaculis fringilla feugiat. Duis aliquet neque in leo iaculis sagittis a in ex. Fusce ac turpis eu enim rutrum hendrerit et non lorem. Etiam vel lorem vulputate, pretium arcu in, tristique turpis.</p>
+			</div>
+	</section>
+
+	<section id="cardapio">
+		<div class="content">
+			<h1>Cardápio</h1>
+			<hr>
+			<ul>
+				<li><img src="img/arroz.jpg" class="img"><span>Arroz</span></li>
+				<li><img src="img/feijão.jpg" class="img"><span>Feijão</span></li>
+				<li><img src="img/macarrao.jpg" class="img"><span>Macarrão</span></li>
+			</ul>
+			<hr>
+			<ul>
+				<li><img src="img/Contra-file.jpg" class="img"><span>Contrafilé</span></li>
+				<li><img src="img/file-mignon.jpg" class="img"><span>File Mignon</span></li>
+				<li><img src="img/picanha.jpg" class="img"><span>Picanha</span></li>
+				<li><img src="img/costela.jpg" class="img"><span>Costela</span></li>
+				<li><img src="img/fraldinha.jpg" class="img"><span>Fraldinha</span></li>
+				<li><img src="img/maminha.jpg" class="img"><span>Maminha</span></li>
+			</ul>
+			<hr>
+			<ul>
+				<li><img src="img/salmao.jpg" class="img"><span>Salmão</span></li>
+				<li><img src="img/anchova.jpg" class="img"><span>Anchova</span></li>
+				<li><img src="img/bacalhau.jpg" class="img"><span>Bacalhau</span></li>
+				<li><img src="img/linguado.jpg" class="img"><span>Linguado</span></li>
+			</ul>
+			<hr>
+			<ul>
+				<li><img src="img/batata-frita.jpg" class="img"><span>Batata Frita</span></li>
+				<li><img src="img/pure-batata.jpg" class="img"><span>Purê</span></li>
+				<li><img src="img/creme-milho.jpg" class="img"><span>Creme de Milho</span></li>
+				<li><img src="img/linguine.jpg" class="img"><span>Linguine</span></li>
+				<li><img src="img/ratatouile.jpeg" class="img"><span>Ratatouile</span></li>
+				<li><img src="img/maionese.jpg" class="img"><span>Maionese</span></li>
+				<li><img src="img/panqueca.jpg" class="img"><span>Panqueca</span></li>
+			</ul>
+			<hr>
+			<ul>
+				<li><img src="img/sorvete.jpg" class="img"><span>Sorvete</span></li>
+				<li><img src="img/bolo.jpg" class="img"><span>Bolo</span></li>
+				<li><img src="img/torta.jpg" class="img"><span>Torta</span></li>
+				<li><img src="img/mousse.jpg" class="img"><span>Mousse</span></li>
+			</ul>
+			<hr>
+	</section>
+	<section id="contact">
+		<h1>Contato</h1>
+			<form nama="frmContato" method="post" action="">
+				<div class="grid grid-pad">
+					<div class="col-1-2">
+						<input type="text" name="name" class="input" placeholder="Nome" required>
+						<input type="tel" name="tel" placeholder="Telefone" class="input" required>
+						<input type="email" name="email" placeholder="Email" class="input" required>
+						<input type="text" name="assunto" placeholder="Assunto" class="input" required>
+						<textarea name="mensagem" class="input" placeholder="Digite sua mensagem!" required></textarea>
+						<input type="submit" value="Enviar" class="btnEnviar">
+					</div>
+					<div class="col-1-2" id="map"></div>
+				</div>
+			</form> 
+			<div id="ender">
+				Av. Thereza Ana Cecon Breda, S/N - Vila Sao Pedro, Hortolândia - SP, 13183-250 - (19) 3865-8070
+			</div>
+	</section>
+	<footer>
+		Developed By <a target="_blank" href="http://tiagocsilva.github.io">Tiago Silva</a>
+	</footer>
+
+	<!--Map Initialization -->
+    <script src="js/map.js"></script>
+</body>
+</html>
